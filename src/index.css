@@ -5,9 +5,94 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  padding: 0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:root {
+  --linear-gradient-1: linear-gradient(120deg, hsla(113, 50%, 50%, 0.8), hsla(249, 100%, 58%, 0.8));
+  --color1 : hsl(150, 50%, 50%);
+  --color1-dark: hsl(150, 70%, 20%);
+  --color1-o: hsla(150, 50%, 50%, .5);
+  --color2 : hsla(249, 100%, 58%, 0.5);
+  --color3 : hsla(200, 33%, 18%, 0.6);
+}
+
+.container-fluid {
+  padding: 0px;
+}
+.navbar-brand > img {
+  width: 2rem;
+  display: inline-block;
+}
+.navbar {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: var(--color1-dark);
+}
+
+.nav-link:hover{
+  background: var(--color1-o);
+}
+
+.carousel-caption {
+  background: var(--color3);
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#projects {
+  background: var(--color1-o);
+}
+.project-slide {
+  background: var(--color1-dark);
+}
+.skills {
+
+}
+.skill-icon {
+  width: 100%;
+}
+.acheivements {
+  background: var(--color2);
+}
+
+
+#contacts {
+  background: var(--color1-o);
+}
+.footer-logo {
+  background: var(--color1-dark);
+}
+
+
+.img-social{
+  width: 40px;
+  padding-right: 1rem;
+}
+.btn-facebook{
+  background: #3b5996;
+  color: white;
+}
+
+.btn-linkedin{
+  background: #25363f;
+  color: white;
+}
+
+.btn-twitter{
+  background: #1da1f2;
+  color: white;
+} 
+.btn-instagram{
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  color: white;
 }
